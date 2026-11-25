@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Borno.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+
+    <!-- Common Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">Borno<span>.</span></a>
+            <nav class="nav-links" id="nav-links">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary btn-sm">Let's Talk <i class="ri-arrow-right-up-line"></i></a>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu"><i class="ri-menu-4-line"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section (Meets Part-C Form Requirements) -->
+    <section class="contact section page-top" id="contact">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-header">
+                    <span class="eyebrow"><i class="ri-sparkling-fill"></i> GET IN TOUCH</span>
+                    <h2>Work <span class="gradient-text">With Me!</span></h2>
+                    <p>Let's Connect and Discuss your Design Project Today!</p>
+                    <div class="social-links">
+                        <a href="https://www.behance.net/saniaanjum4" target="_blank" rel="noopener noreferrer" aria-label="Behance"><i class="ri-behance-fill"></i></a>
+                        <a href="https://dribbble.com/saniaanjum359" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"><i class="ri-dribbble-line"></i></a>
+                        <a href="https://www.linkedin.com/in/shaniya-unjum/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass-card" style="padding: 36px;" id="contact-form">
+                    <!-- Text & Email Inputs -->
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <!-- Dropdown (<select>) -->
+                    <div class="input-group">
+                        <label for="service">Select Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>-- Choose a service --</option>
+                            <option value="uiux">UI/UX App Design (Figma)</option>
+                            <option value="web">Website Design & Landing Page</option>
+                            <option value="frontend">Frontend Development (HTML/CSS/JS)</option>
+                            <option value="consultation">Design Consultation</option>
+                        </select>
+                    </div>
+
+                    <!-- Radio Buttons -->
+                    <div class="input-group">
+                        <label>Project Timeline (Radio):</label>
+                        <div class="choice-row">
+                            <label class="choice-item"><input type="radio" name="timeline" value="urgent" required> Urgent (1–2 Weeks)</label>
+                            <label class="choice-item"><input type="radio" name="timeline" value="standard"> Standard (1 Month)</label>
+                            <label class="choice-item"><input type="radio" name="timeline" value="flexible"> Flexible</label>
+                        </div>
+                    </div>
+
+                    <!-- Checkboxes -->
+                    <div class="input-group">
+                        <label>Deliverables Needed (Checkbox):</label>
+                        <div class="choice-row">
+                            <label class="choice-item"><input type="checkbox" name="deliverable" value="wireframe"> Wireframes</label>
+                            <label class="choice-item"><input type="checkbox" name="deliverable" value="prototype"> Interactive Prototype</label>
+                            <label class="choice-item"><input type="checkbox" name="deliverable" value="code"> Source Code</label>
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="input-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Send Message <i class="ri-send-plane-fill"></i>
+                    </button>
+                    <p class="form-status" id="form-status"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="logo">Borno<span>.</span></a>
+            <p>&copy; 2026 Shaniya Unjum Bir Borno. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
